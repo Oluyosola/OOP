@@ -3,7 +3,7 @@ class person{
     public $name;
     public $age;
     public function sleep(){
-        echo "I'm sleeping";</br>
+        echo "I'm sleeping";</br>  
     }
         public function eat(){
         echo "I want Amala";
