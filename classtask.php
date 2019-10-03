@@ -3,13 +3,27 @@ class Employee
     {
         public $firstname;
         public $lastnme;
+        public $phoneNumber;
+        public $department;
+
         // public function __construct(){
         //      $this->firstname = $firstname;
          //}
          public function _get(){
-            echo $this->firstname . " ". $this->lastname;
+            echo $this->firstname . " ". $this->lastname . "</br>";
          }
-         
+        public function setPhoneNumber($phoneNumber){
+            echo $this->phoneNumber = $phoneNumber . "</br>";
+         }
+         public function setdepartment($department){
+            echo $this->department = $department . "</br>";
+         }
+         public function setName($firstname){
+            echo $this->firstname = $firstname . "</br>";
+         }
+         public function setlastname($lastname){
+            echo $this->lastname = $lastname;
+         }
         public function firstname(){
         }
         public function lastname(){
@@ -55,3 +69,7 @@ $department->employee_profile();
 $department->employee_name();
 $department->employee_age(); 
 $department->_get();
+$department->setPhoneNumber("07069688056");
+$department->setdepartment("Sytems Engineering");
+$department->setName("Nurudeen");
+$department->setlastname("Obioha");
